@@ -8,4 +8,4 @@
 - Advanced Custom Fields with its Repeater Field plugin, from Elliot Condon
 
 ### Notes
-Design by [Savannah Julian][http://www.savannahjulian.com]
+Design by [Savannah Julian](http://www.savannahjulian.com)
