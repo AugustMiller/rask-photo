@@ -1,5 +1,5 @@
 # Wordpress Photography Portfolio
-## Built for Cindi Rask, 2014
+*Built for Cindi Rask, 2014*
 
 ### Project requirements
 - As far as I know, Wordpress 3.8.1 or newer
