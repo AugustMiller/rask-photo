@@ -1,0 +1,65 @@
+/*
+	Mixins
+*/
+
+@mixin clearfix ( ) {
+	&:after {
+		clear: both;
+		content: "";
+		display: block;
+		height: 0;
+		line-height: 0;
+		visibility: hidden;
+	}
+}
+
+/*
+	Animation
+*/
+
+@mixin animate( $duration: .3s , $property: all , $function: cubic-bezier( 0 , 1 , 1 , 1 ) ) {
+		@include transition-duration( $duration );
+		@include transition-property( $property );
+		@include transition-timing-function( $function );
+}
+
+/*
+	Media Queries
+*/
+
+@mixin mobile( ) {
+	@media screen and ( max-width : $mobile ) {
+		@content;
+	}
+}
+
+@mixin tablet ( ) {
+	@media screen and ( max-width : $tablet ) {
+		@content;
+	}
+}
+
+@mixin desktop ( ) {
+	@media screen and ( min-width : $desktop ) {
+		@content;
+	}
+}
+
+/*
+	Keyframes
+*/
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}

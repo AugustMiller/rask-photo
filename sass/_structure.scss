@@ -1,0 +1,58 @@
+/*
+	Structure
+*/
+
+* {
+	outline: none;
+}
+
+html , body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $dark;
+}
+
+
+.header {
+	
+}
+
+.content {
+	padding-top: 4em;
+	padding-bottom: 4em;
+	&.no-space {
+		padding-top: 0;
+	}
+	background: white;
+}
+
+.footer {
+
+}
+
+section {
+
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 2em;
+	max-width: $desktop;
+	@extend .clearfix;
+
+	@include tablet {
+		padding: 0 1em;
+	}
+
+	@include mobile {
+		padding: 0 0.5em;
+	}
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}

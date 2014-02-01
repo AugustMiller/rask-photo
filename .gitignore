@@ -1,0 +1,4 @@
+*.scssc
+.DS_Store
+wp-config.php
+*.css
