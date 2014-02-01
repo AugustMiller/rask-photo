@@ -1,0 +1,11 @@
+# Wordpress Photography Portfolio
+## Built for Cindi Rask, 2014
+
+### Project requirements
+- As far as I know, Wordpress 3.8.1 or newer
+- PHP 5.2+
+- Ruby (Compass)
+- Advanced Custom Fields with its Repeater Field plugin, from Elliot Condon
+
+### Notes
+Design by [Savannah Julian][http://www.savannahjulian.com]
