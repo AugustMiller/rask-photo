@@ -9,7 +9,7 @@ var Images,
 $(document).ready( function ( ) {
 	Images = new Loader( ".slideshow,.content" );
 
-	initGallery();
+	if ( $(document.body).hasClass('home') || $(document.body).hasClass('single-project') ) initGallery();
 
 	//	Menu
 
