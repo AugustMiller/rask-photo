@@ -59,45 +59,6 @@
 	}
 }
 
-.slideshow {
-	overflow: hidden;
-	background: $dark;
-
-	.slides {
-		position: relative;
-
-		.slide {
-			overflow: hidden;
-			float: left;
-
-			img {
-				width: 100%;
-			}
-		}
-	}
-	.indicators {
-		position: absolute;
-		z-index: 2000;
-		width: 100%;
-		bottom: 1em;
-		text-align: center;
-		.slide-dot {
-			display: inline-block;
-			width: 8px;
-			height: 8px;
-			margin-right: 12px;
-			background: rgba(255, 255, 255, 0.5);
-			border-radius: 100%;
-
-			@include animate();
-			
-			&.active {
-				background: rgba(255, 255, 255, 0.85);
-			}
-		}
-	}
-}
-
 .project-intro {
 	blockquote {
 		font-size: 2em;

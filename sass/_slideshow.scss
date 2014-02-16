@@ -1,0 +1,67 @@
+/*
+	Slideshow
+*/
+
+.slideshow {
+	overflow: hidden;
+	background: $dark;
+
+	.slides {
+		position: relative;
+		z-index: 1000;
+
+		.slide {
+			overflow: hidden;
+			float: left;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.indicators {
+		position: absolute;
+		z-index: 2000;
+		width: 100%;
+		bottom: 1em;
+		text-align: center;
+		.slide-dot {
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			margin-right: 12px;
+			background: rgba(255, 255, 255, 0.5);
+			border-radius: 100%;
+
+			@include animate();
+			
+			&.active {
+				background: rgba(255, 255, 255, 0.85);
+			}
+		}
+	}
+	.controls {
+		position: absolute;
+		top: 50%;
+		margin-top: -32px;
+		width: 100%;
+		left: 0;
+		z-index: 1500;
+		.prev , .next {
+			margin: 0 32px;
+			opacity: 0.5;
+			cursor: pointer;
+			@include animate();
+			&:hover {
+				opacity: 0.75;
+				margin: 0 26px;
+			}
+		}
+		.prev {
+			float: left;
+		}
+		.next {
+			float: right;
+		}
+	}
+}

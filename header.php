@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title><? bloginfo('title'); ?></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<? wp_head(); ?>
 	</head>
 

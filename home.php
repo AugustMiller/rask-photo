@@ -9,6 +9,10 @@
 	<section class="slideshow">
 		<? if ( count( $home["fields"]["featured_projects"] ) ) { ?>
 			<div class="home-heroes">
+				<div class="controls">
+					<div class="prev"><img src="<?= bloginfo('template_directory') ?>/images/slide_prev.svg" /></div>
+					<div class="next"><img src="<?= bloginfo('template_directory') ?>/images/slide_next.svg" /></div>
+				</div>
 				<div class="indicators"></div>
 				<div class="slides">
 					<? $featured = $home["fields"]["featured_projects"]; ?>

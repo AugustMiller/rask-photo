@@ -128,8 +128,8 @@ Image.prototype = {
 
 function initGallery ( ) {
 	Gallery = new Slideshow( '.home-heroes' , {
-		// forward : ".slide-next",
-		// back : ".slide-prev",
+		forward : ".next",
+		back : ".prev",
 		auto : false,
 		slides : ".slide",
 		wrapper : ".slides",
