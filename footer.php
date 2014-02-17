@@ -15,7 +15,7 @@
 						wp_nav_menu( $social_nav );
 					?>
 					<ul>
-						<li>All work and images &copy; Cindi Rask, <?= date('Y') ?></li>
+						<li class="imprint">All work and images &copy; Cindi Rask, <?= date('Y') ?></li>
 					</ul>
 				</div>
 			</div>

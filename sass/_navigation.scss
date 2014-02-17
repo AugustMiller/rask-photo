@@ -15,7 +15,7 @@ a {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: 1500;
+	z-index: 2000;
 	padding: 1.5em 0;
 	color: white;
 	text-transform: uppercase;
@@ -121,6 +121,7 @@ a {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: center;
+	font-size: 70%;
 
 	a {
 		&:hover {
@@ -145,8 +146,13 @@ a {
 
 		li {
 			display: inline;
-			font-size: 70%;
 			padding: 0 0.5em;
+		}
+	}
+	@include tablet ( ) {
+		.imprint {
+			color: adjust-lightness( $mid-grey , -10% );
+			font-size: 85%;
 		}
 	}
 }

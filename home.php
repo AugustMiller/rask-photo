@@ -9,7 +9,7 @@
 	<section class="slideshow">
 		<? if ( count( $home["fields"]["featured_projects"] ) ) { ?>
 			<div class="home-heroes">
-				<div class="controls">
+				<div class="controls tablet-hide mobile-hide">
 					<div class="prev"><img src="<?= bloginfo('template_directory') ?>/images/slide_prev.svg" /></div>
 					<div class="next"><img src="<?= bloginfo('template_directory') ?>/images/slide_next.svg" /></div>
 				</div>
